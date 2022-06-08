@@ -65,7 +65,7 @@ If a contract allows multiple mints but limits the mints per transaction then yo
 contract_address = "0x0000000000000000000000000000000000000000"
 function = "mint(uint256)" # Mint only allows 5 per tx and 10 max per wallet
 arguments = [{ type = "uint256", value = 5 }]
-value = 0.2 # The value set here is PER transaction
+value = 0.2 # The cost of mint PER transaction
 transaction_count = 2 # We need to run the function above twice to mint all 10 NFTs
 ```
 
