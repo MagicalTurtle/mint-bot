@@ -49,7 +49,7 @@ transaction_count = 1
 
 # The gas preset to use for a transaction.
 # Values you can choose: slow, standard, fast, instant, custom
-gas_preset = "custom"
+gas_preset = "fast"
 # The maximum gas price that can be used when "standard", "fast" or "instant" gas preset is used
 max_gas_price = 200
 # The gas price in gwei used when "custom" gas preset is used.
