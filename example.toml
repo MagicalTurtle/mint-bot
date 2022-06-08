@@ -1,0 +1,64 @@
+
+[account]
+# DO NOT SHARE YOUR PRIVATE KEY
+private_key = ""
+
+# Run the bot but do not execute any transactions.
+# Good for debugging
+dry_run = false
+
+# Wether to simulate flashbot bundles before sending
+simulate = false
+
+[connection]
+proxy_url = ""
+
+# Use Infura or Alchemy here.
+# You will need to sign up using a fake email to get an API Key
+provider_url = "https://mainnet.infura.io/v3/"
+
+# Specify chain id for other networks
+# Defaults to mainnet if not set
+# chain_id = 1
+
+# A private key that flashbots can use to identify you.
+# This can be the same in all configurations
+# DO NOT USE A WALLET PRIVATE KEY HERE
+flashbots_signer = ""
+
+# Flash bot relay.
+# Uncomment below for other relays:
+# relay = "https://mev-relay.ethermine.org"
+# relay = "https://api.taichi.network:10001/rpc/public"
+# relay = "https://api.edennetwork.io/v1/bundle"
+# relay = "https://bundle.miningdao.io"
+relay = "https://relay.flashbots.net"
+
+[mint]
+# The contract address of the NFT
+contract_address = "0x0000000000000000000000000000000000000000"
+# The minting function of the nft along with argument types.
+function = "mint(uint256)"
+# The arguments to pass to the minting function in order.
+arguments = [{ type = "uint256", value = 5 }]
+# The ethereum payable value to the mint function. 0 for free mints.
+value = 0.5
+# The number of transactions to send in a bundle
+# The total number of nfts minted would be: transaction count * mint per transaction
+transaction_count = 1
+
+# The gas preset to use for a transaction.
+# Values you can choose: slow, standard, fast, instant, custom
+gas_preset = "custom"
+# The maximum gas price that can be used when "standard", "fast" or "instant" gas preset is used
+max_gas_price = 200
+# The gas price in gwei used when "custom" gas preset is used.
+gas_price = 50
+# The priority fee (or Miner Tip) in gwei used when "custom" gas preset is used.
+priority_fee = 2
+# The gas limit
+gas_limit = 250_000
+
+# Unix time in seconds when bot should start sending flash bundles
+# If value is non-zero then bot will automatically stop sending bundles 8 hours after start time.
+start_time = 0
