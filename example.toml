@@ -3,6 +3,10 @@
 # DO NOT SHARE YOUR PRIVATE KEY
 private_key = ""
 
+# The auth token to use this bot
+# Please request this from MagicalTurtle
+auth_token = ""
+
 # Run the bot but do not execute any transactions.
 # Good for debugging
 dry_run = false
