@@ -8,10 +8,11 @@ The bot uses toml files for configuration. Please see `example.toml` for a basic
 
 It is also advisable to use a **Burner Wallet** when using this bot. **NEVER USE YOUR COLD WALLET**.
 
-1. Copy `example.toml` into another file. (e.g `chubbicorns.toml`)
-2. Generate a flashbot signer key (This only needs to be done once) by running the bot and selecting `Generate Flashbot Signer`
-3. Edit the configurations inside the new file.
-4. Run the bot and select the configuration you would like to use.
+1. Generate an encrypted private key file by running the application and selecting `Encrypt private key` then folllowing the prompts.
+2. Copy `example.toml` into another file. (e.g `chubbicorns.toml`)
+3. Generate a flashbot signer key (This only needs to be done once) by running the application and selecting `Generate Flashbot Signer`
+4. Edit the configurations inside the new file.
+5. Run the bot and select the configuration you would like to use.
 
 ## Examples
 
