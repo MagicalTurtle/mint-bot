@@ -2,6 +2,10 @@
 
 A simple bot which allows automated NFT minting via [Flashbots](https://docs.flashbots.net/).
 
+## Gas Prices
+
+This bot uses [Etherchain](https://etherchain.org/tools/gasnow) to estimate gas prices
+
 ## How to use the bot
 
 The bot uses toml files for configuration. Please see `example.toml` for a basic template.
