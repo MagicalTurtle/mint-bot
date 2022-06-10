@@ -4,7 +4,7 @@
 # Use `Encrypt Private Key` function of bot to generate this
 private_key_file = "my_private_key.enc"
 # The password to decrypt the private key
-privaye_key_file_password = ""
+private_key_file_password = ""
 
 # The auth token to use this bot
 # Please request this from MagicalTurtle
